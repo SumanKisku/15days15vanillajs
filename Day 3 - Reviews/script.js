@@ -47,15 +47,26 @@ let prevBtn = document.getElementById("prev-btn");
 let nextBtn = document.getElementById("next-btn");
 let surprise = document.getElementById("surprise");
 
-// function to set the reviews
+
 
 
 // initializing the first review
-let reviewNumber = 0;
+
 window.addEventListener('DOMContentLoaded', () => {
     setReview();
 });
 
+// function to set the reviews
+
+let reviewNumber = 0;
+
+let setReview = () => {
+  let item = reviews[reviewNumber];
+  photo.src = item.img;
+  name.textContent = item.name;
+  job.textContent = item.job;
+  about.textContent = item.about;
+}
 
 // prev button: go to the previous review
 
