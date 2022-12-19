@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap sm:p-5 flex-col md:flex-row items-center">
+          <a class="flex mt-[10px] sm:mt-0 title-font font-medium self-start items-center text-gray-900 mb-4 ml-4 md:mb-0 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Tailblocks</span>
+          </a>
+          <nav id="navbar" class="md:ml-auto flex flex-col hidden md:flex sm:flex-row sm:flex-wrap items-center text-base justify-center">
+            <a class="sm:mr-5 hover:text-gray-900 border sm:border-none w-screen sm:w-max  p-2">First Link</a>
+            <a class="sm:mr-5 hover:text-gray-900 border sm:border-none w-screen sm:w-max p-2">Second Link</a>
+            <a class="sm:mr-5 hover:text-gray-900 border sm:border-none w-screen sm:w-max p-2">Third Link</a>
+            <a class="sm:mr-5 hover:text-gray-900 border sm:border-none w-screen sm:w-max p-2">Fourth Link</a>
+          </nav>
+          <div id="hamburger" class="md:hidden absolute top-[20px] right-[20px]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </div>
+          </div>
+      </header>
+      <script src="script.js"></script>
+</body>
+</html>
