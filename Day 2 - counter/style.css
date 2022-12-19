@@ -19,6 +19,15 @@ body {
 
 #btns {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+@media screen and (min-width: 430px) {
+    #btns {
+    flex-direction: row;
+    }
 }
 
 .btn {
